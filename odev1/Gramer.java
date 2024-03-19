@@ -6,21 +6,17 @@ public class Gramer {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        String[] ozne = {"Ben", "Sen", "Hasan", "Nurşah", "Elif", "Abdulrezzak",
-            "Zeynelabidin", "Naki", "ben", "sen", "hasan", "nurşah", "elif", "abdulrezzak",
+        String[] ozne = {"ben", "sen", "hasan", "nurşah", "elif", "abdulrezzak",
             "zeynelabidin", "naki"};
 
-        String[] nesne = {"Bahçe", "Okul", "Park", "Sınıf", "Yarın", "Pazartesi",
-            "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar",
-            "Merkez", "Ev", "Kitap", "Defter", "Güneş", "Beydağı", "bahçe", "okul",
-            "park", "sınıf", "yarın", "pazartesi", "salı", "carşamba", "perşembe", 
-            "cuma", "cumartesi", "pazar", "merkez", "ev", "kitap", "defter", "güneş", "beydağı"};
+        String[] nesne = {"bahçe", "okul", "park", "sınıf", "yarın", "pazartesi",
+            "salı", "çarşamba", "perşembe", "cuma", "cumartesi", "pazar",
+            "merkez", "ev", "kitap", "defter", "güneş", "beydağı"};
 
-        String[] yuklem = {"Gitmek", "Gelmek", "Okumak", "Yazmak", "Yürümek", "Görmek",
-            "gitmek", "gelmek", "okumak", "yazmak", "yürümek", "görmek"};
+        String[] yuklem = {"gitmek", "gelmek", "okumak", "yazmak", "yürümek", "görmek"};
 
         System.out.print("cumle giriniz: ");
-        String cumle = s.nextLine().trim();
+        String cumle = s.nextLine().trim().toLowerCase();
 
         String[] kelimeler = cumle.split("\\s+");
         
