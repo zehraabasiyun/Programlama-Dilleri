@@ -29,7 +29,7 @@ public class Gramer {
         if(Arrays.asList(yuklem).contains(kelimeler[2]))
             yuklemKontrol = true; 
         
-        if(ozneKontrol && nesneKontrol && yuklemKontrol)
+        if(ozneKontrol && nesneKontrol && yuklemKontrol && kelimeler.length == 3)
             System.out.println("EVET");
         else
             System.out.println("HAYIR");       
